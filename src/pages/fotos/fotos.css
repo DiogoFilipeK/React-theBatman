@@ -1,0 +1,76 @@
+.actor-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color:  RED;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMjMwMzE1OTc0OF5BMl5BanBnXkFtZTcwMDU2NTg0Nw@@._V1_FMjpg_UX1000_.jpg)
+}
+
+.banner-2{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTg4NzM5NDk0MV5BMl5BanBnXkFtZTcwNzAzMTUxNw@@._V1_FMjpg_UX1000_.jpg);
+}
+
+.banner-3{
+    background-image: url(https://flxt.tmsimg.com/assets/991484_v9_aa.jpg);
+}
+
+.banner-4{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Andy_Serkis_by_Gage_Skidmore_2.jpg/1200px-Andy_Serkis_by_Gage_Skidmore_2.jpg);
+}
+
+.banner-5{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/John_Turturro_2017.jpg);
+}
+
+.banner-6{
+    background-image: url(https://wwd.com/wp-content/uploads/2020/12/AP_20026014168730.jpg);
+}
+
+@media(max-width: 768px) {
+    .footer-nav {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 1px;
+    }
+
+}
